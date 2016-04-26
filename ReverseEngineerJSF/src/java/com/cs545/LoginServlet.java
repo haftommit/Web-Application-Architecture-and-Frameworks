@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -13,7 +14,7 @@ import javax.servlet.http.HttpSession;
  *
  * @author Haftom Alemayehu <Haftom Alemayehu>
  */
-
+@WebServlet(urlPatterns = {"/LoginServlet"})
 public class LoginServlet extends HttpServlet {
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -68,7 +69,7 @@ public class LoginServlet extends HttpServlet {
                 request.setAttribute("error", "Bad password"); 
                 break;
             case LOCKEDOUT:
-                request.setAttribute("error", "Sorry, too many failed login attempts."); 
+                request.setAttribute("error", "Sorry, You Attempted morethan 3 times."); 
                 break;
         } 
         dispatcher.forward(request, response); 
