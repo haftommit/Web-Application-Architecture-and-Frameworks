@@ -1,6 +1,7 @@
 package com.cs545;
 import java.io.Serializable; 
-import javax.inject.Named;
+import javafx.beans.NamedArg;
+
 
 /**
  *
