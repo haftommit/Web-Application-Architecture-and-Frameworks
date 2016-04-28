@@ -51,7 +51,7 @@
 
     <application>
         <resource-bundle>
-            <base-name>com.example.beans.messages</base-name>
+            <base-name>mum.cs545.beans.messages</base-name>
             <var>msgs</var>
         </resource-bundle>
     </application>
