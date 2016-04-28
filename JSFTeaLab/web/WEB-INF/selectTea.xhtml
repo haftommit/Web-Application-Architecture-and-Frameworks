@@ -14,8 +14,8 @@
             #{msgs.teaCharacteristics}
             <p>
                 #{msgs.color}:
-                <h:selectOneMenu value="#{TeaExpertBean.color}">
-                    <f:selectItems value="#{TeaExpertBean.teaColors}"/>
+                <h:selectOneMenu value="#{teaExpertBean.color}">
+                    <f:selectItems value="#{teaExpertBean.teaColors}"/>
                 </h:selectOneMenu>
             </p>
             
@@ -23,7 +23,7 @@
             <br/>
             <div style="align:center;">
                 <!-- determine the brands to display for the associated color.  Save them so they can be displayed in the listBrands page -->
-                 <h:commandButton value="#{msgs.submit}" action="#{TeaExpertBean.findBrands}"></h:commandButton> 
+                 <h:commandButton value="#{msgs.submit}" action="#{teaExpertBean.findBrands}"></h:commandButton> 
             </div>
         </h:form>
     </h:body>

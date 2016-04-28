@@ -9,6 +9,9 @@ public class TeaBrand {
     String name;
     String description;
     String picture;
+
+    public TeaBrand() {
+    }
     
     public TeaBrand(String name, String description, String picture) {
         this.name = name;
