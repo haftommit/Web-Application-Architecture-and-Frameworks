@@ -7,11 +7,6 @@ package com.beer.models;
 
 import java.util.ArrayList;
 import java.util.List;
-
-/**
- *
- * @author Anish Panthi
- */
 public class BeerExpert {
 
     public List getBrands(String color) {
